@@ -22,7 +22,7 @@ jobs:
           fi
 
       - name: Build and publish Alpine docker image
-        uses: elgohr/Publish-Docker-Github-Action@2.12
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: sourcepole/qwc-uwsgi-base
           username: ${{ secrets.DOCKER_HUB_USER }}
@@ -31,7 +31,7 @@ jobs:
           workdir: uwsgi-base/alpine
 
       - name: Build and publish Ubuntu docker image
-        uses: elgohr/Publish-Docker-Github-Action@2.12
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: sourcepole/qwc-uwsgi-base
           username: ${{ secrets.DOCKER_HUB_USER }}
